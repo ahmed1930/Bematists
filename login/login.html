@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Bematists | Login</title>
+</head>
+<body>
+    <section class="main">
+        <div class="login-container">
+            <img class="title" src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" alt="logo">
+            <!-- <p class="title">Welcome back</p> -->
+            <div class="separator"></div>
+            <p class="welcome-message">This Page is For Admins Only</p>
+
+            <form class="login-form">
+                <div class="user form-control field">
+                    <input type="text" placeholder="E-mail">
+                    <i class="icon fas fa-user"></i>
+                    <i id="err-icn1" class="error err-icon fas fa-exclamation-circle"></i>
+                </div>
+                
+                <div id="txt1" class="error err-text field">Please Enter Your E-mail</div>
+                <div class="pass form-control field">
+                    <input type="password" placeholder="Password">
+                    <i class="icon fas fa-lock"></i>
+                    <i id="err-icn2" class="error err-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div id="txt2" class="error err-text">Please Enter Your Password</div>
+                <button class="submit">Login</button>
+            </form>
+        </div>
+    </section>
+    <script src= "login.js"></script>
+</body>
+</html>

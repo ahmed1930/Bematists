@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    width: 100%;
+    border-spacing: 2px;
+}
+.content {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-height: 40vh;
+    min-width: 100vh;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content thead tr {
+    background-color: #6d0911;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+.content th,
+.content td {
+    padding: 12px 15px;
+}
+.content tbody tr {
+    border-bottom: 1px solid #ddd;
+    
+}
+.content tbody tr:nth-of-type(even) {
+    /* background-color: #f0eaea; */
+    background-color: #dfdada;
+}
+.content tbody tr:last-of-type {
+    border-bottom: 2px solid #6d0911;
+}
+.content tbody tr.active-row {
+    font-weight: bold;
+    color: #6d0911;
+}
+.status-incoming {
+    border-radius: 5px;
+    background-color: #ffe599;
+    padding: 0.2em 1rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+.status-outgoing {
+    border-radius: 5px;
+    background-color: #ca0000;
+    color: #fff;
+    padding: 0.2em 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* progress-bar */
+
+.container {
+    min-width: 100vh;
+    margin:  20px auto 0 auto;
+    padding: 40px;
+    /* background-color: #dfdada; */
+}
+#progress-bar {
+    display: flex;
+    width: 565px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.step {
+    text-align: center;
+}
+.step-txt {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #6d0911;
+    /* padding-right: 50px; */
+}
+.bullet{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: 1px solid #6d0911;
+    color: #6d0911;
+    position: relative;
+    transition: background-color 500ms;
+    /* line-height: 20px; */
+    line-height: 30px;
+}
+.bullet.completed  {
+	color:  white;
+	background-color:  #6d0911;
+}
+
+.bullet.completed::after {
+	content: '';
+	position: absolute;
+	/* right: -60px; */
+	right: -110px;
+	bottom: 11.5px;
+	height: 2px;
+	/* width: 54px; */
+	width: 100px;
+	background-color: #6d0911;
+}

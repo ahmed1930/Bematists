@@ -1,0 +1,24 @@
+/* <div class="search-warpper">
+                <i class="fas fa-search"></i>
+                <input type="search" placeholder="Start searching..." />
+</div>
+
+
+.search-warpper {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.search-warpper i {
+    display: inline-block;
+    padding: 0 16px;
+    font-size: 20px;
+}
+.search-warpper input {
+    height: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+} */

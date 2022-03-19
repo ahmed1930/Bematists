@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18)
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+html {
+    font-size: 14px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 14.08px;
+    background-color: #f6f6f9;
+    user-select: none;
+    overflow-x: hidden;
+}
+.container {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 28.8px;
+    grid-template-columns: 224px auto 368px;
+}
+a {
+    color: #363949;
+}
+h1 {
+    font-weight: 800;
+    font-size: 28.8px;
+}
+h2 {
+    font-size: 22.4px;
+}
+h3 {
+    font-size: 0.13.92px;
+}
+h4 {
+    font-size: 12.8px;
+}
+h5 {
+    font-size: 12.32px;
+}
+
+small{
+    font-size: 12px;
+}
+.profile-photo {
+    width: 44.8px;
+    height: 44.8px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+p {
+    color: #7d8da1;
+}
+b {
+    color: #677483;
+}
+aside {
+    height: 100vh;
+}
+aside .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22.4px;
+}
+aside .close {
+    display: none;
+}
+/* side bar */
+aside .side-bar {
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 48px;
+}
+
+aside h3 {
+    font-weight: 500;
+}
+aside .side-bar a {
+    display: flex;
+    color: darkgrey;
+    margin-left: 32px;
+    gap: 16px;
+    align-items: center;
+    position: relative;
+    height: 59.2px;
+    transition: all 300ms ease;
+}
+aside .side-bar a i{
+    font-size: 25.6px;
+}
+aside .side-bar a:last-child {
+    position: absolute;
+    bottom: 32px;
+    width: 100%;
+}

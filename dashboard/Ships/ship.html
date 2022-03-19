@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="ship.css">
+    <title>Bematists | Dashboard</title>
+</head>
+<body>
+    <input type="checkbox" id="nav">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <span>
+                <img class="logo-src" src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" height="65px" width="65px" alt="">
+            </span>
+            <h2>BEMATISTS</h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="Ships/ship.html" class="active">
+                        <i class="fas fa-ship"></i>
+                        <span>Ships</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../dashboard.html">
+                        <i class="fas fa-warehouse"></i>
+                        <span>Storage</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../trucks/trucks.html">
+                        <i class="fas fa-truck-moving"></i>
+                        <span>Trucks<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../error-sec/error.html">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>Errors</span>
+                        <span class="error-count">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Tasks/tasks.html">
+                        <i class="fas fa-tasks"></i>
+                        <span>Tasks<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="vantage points/points.html">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <span>Vintage Points<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../inbox/inbox.html">
+                        <i class="fas fa-inbox"></i>
+                        <span>inbox<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../login/login.html" class="logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout<span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label class="nav-btn" for="nav">
+                    <i class="fas fa-bars"></i>
+                    Dashboard
+                </label>
+            </h2>
+            <div class="user-warpper" id="profile">
+                <img src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" height="40px" width="40px" alt="">
+                <div class="">
+                    <h4>Bematists</h4>
+                    <small>Harbor Manager</small>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="cards">
+                <div class="single-card" id="card1">
+                    <div class="text">
+                        <h1 id="card1-text">3000</h1>
+                        <span id="card1-text2">incoming containers</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-arrow-down" id="card1-icon"></i>
+                    </div>
+                </div>
+                <div class="single-card" id="card2">
+                    <div class="text">
+                        <h1 id="card2-text">0</h1>
+                        <span id="card2-text2">outgoing containers</span>
+                    </div>
+                    <div class="icon"> 
+                        <i class="fas fa-arrow-up" id="card2-icon"></i>
+                    </div>
+                </div>
+                <div class="single-card" id="card3">
+                    <div class="text">
+                        <h1 id="card3-text">2,797 kg</h1>
+                        <span>Avg. weight</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                </div>
+                <div class="single-card" id="card4">
+                    <div class="text">
+                        <h1 id="card4-text">32h</h1>
+                        <span id="card4-text2">Estimating Time</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-clock" id="card4-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="board">
+                <table class="scrolldown">
+                    <thead>
+                        <tr>
+                            <td>Ship Type</td>
+                            <td>Containers on</td>
+                            <td>to unload</td>
+                            <td>to upload</td>
+                            <td>Status</td>
+                            <td>Date</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active-row" id="row1">
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5 class="type" id="type-1">New Panamax</h5>
+                                    <p id="view-location">View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>7,000</h5>
+                                <p>container</p>
+                            </td>
+                            <td class="weight">3,000</td>
+                            <td class="weight">0</td>
+                            <td class="status-in">
+                                <p>Incoming</p>
+                            </td>
+                            <td class="date">
+                                <h5>14/3/2022</h5>
+                            </td>
+                        </tr>
+
+                        <tr id="row2">
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5 class="type" id="type-2">New Panamax</h5>
+                                    <p id="view-location">View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>2,500</h5>
+                                <p>container</p>
+                            </td>
+                            <td class="weight">0</td>
+                            <td class="weight">2,000</td>
+                            <td class="status">
+                                <p>outgoing</p>
+                            </td>
+                            <td class="date">
+                                <h5>14/3/2022</h5>
+                            </td>
+                        </tr>
+
+                        <tr id="row3">
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5 class="type" id="type-3">Post Panamax</h5>
+                                    <p id="view-location">View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>3,000</h5>
+                                <p>container</p>
+                            </td>
+                            <td class="weight">1,250</td>
+                            <td class="weight">500</td>
+                            <td class="status-in">
+                                <p>Incoming</p>
+                            </td>
+                            <td class="date">
+                                <h5>14/3/2022</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="ship.js"></script>
+</body>
+</html>

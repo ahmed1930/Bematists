@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Bematists | Dashboard</title>
+</head>
+<body>
+    <input type="checkbox" id="nav">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <span>
+                <img class="logo-src" src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" height="65px" width="65px" alt="">
+            </span>
+            <h2>BEMATISTS</h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="Ships/ship.html">
+                        <i class="fas fa-ship"></i>
+                        <span>Ships</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html" class="active">
+                        <i class="fas fa-warehouse"></i>
+                        <span>Storage</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="trucks/trucks.html">
+                        <i class="fas fa-truck-moving"></i>
+                        <span>Trucks<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="error-sec/error.html">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>Errors</span>
+                        <span class="error-count">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Tasks/tasks.html">
+                        <i class="fas fa-tasks"></i>
+                        <span>Tasks<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="vantage points/points.html">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <span>Vintage Points<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../login/login.html" class="logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout<span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label class="nav-btn" for="nav">
+                    <i class="fas fa-bars"></i>
+                    Dashboard
+                </label>
+            </h2>
+            <div class="user-warpper" id="profile">
+                <img src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" height="40px" width="40px" alt="">
+                <div class="">
+                    <h4>Bematists</h4>
+                    <small>Harbor Manager</small>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="cards">
+                <div class="single-card" id="card1">
+                    <div class="text">
+                        <h1 id="card1-text">3000</h1>
+                        <span id="card1-text2">incoming containers</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-arrow-down" id="card1-icon"></i>
+                    </div>
+                </div>
+                <div class="single-card" id="card2">
+                    <div class="text">
+                        <h1 id="card2-text">1500</h1>
+                        <span id="card2-text2">outgoing containers</span>
+                    </div>
+                    <div class="icon"> 
+                        <i class="fas fa-arrow-up" id="card2-icon"></i>
+                    </div>
+                </div>
+                <div class="single-card" id="card3">
+                    <div class="text">
+                        <h1>2,797 kg</h1>
+                        <span>Avg. weight</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                </div>
+                <div class="single-card" id="card4">
+                    <div class="text">
+                        <h1 id="card4-text">4000</h1>
+                        <span id="card4-text2">Total Containers</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-boxes" id="card4-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="drop-hide" id="drop-hide">
+                <div class="container">        
+                    <div class="select-box">
+                        <div class="options-container"> <!-- active -->
+                            <div class="option" id="yesterday-option">
+                                <input type="radio" class="radio" name="Category" id="yesterday">
+                                <label for="yesterday">Yesterday</label>
+                            </div>
+                            <div class="option" id="today-option">
+                                <input type="radio" class="radio" name="Category" id="today">
+                                <label for="today">Today</label>
+                            </div>
+                            <div class="option" id="tomorrow-option">
+                                <input type="radio" class="radio" name="Category" id="tomorrow">
+                                <label for="tomorrow">Tomorrow</label>
+                            </div>
+                        </div>
+                        <div class="selected">Today</div>
+                    </div>
+                </div>
+            </div>
+            <div class="drop-hide2" id="drop-hide2">
+                <div class="container">        
+                    <div class="select-box">
+                        <div class="options-container"> <!-- active -->
+                            <div class="option" id="yesterday-option2">
+                                <input type="radio" class="radio" name="Category" id="yesterday">
+                                <label for="yesterday">Yesterday</label>
+                            </div>
+                            <div class="option" id="today-option2">
+                                <input type="radio" class="radio" name="Category" id="today">
+                                <label for="today">Today</label>
+                            </div>
+                            <div class="option" id="tomorrow-option2">
+                                <input type="radio" class="radio" name="Category" id="tomorrow">
+                                <label for="tomorrow">Tomorrow</label>
+                            </div>
+                        </div>
+                        <div class="selected">Today</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="board" id="board1">
+                <table class="scrolldown">
+                    <thead>
+                        <tr>
+                            <td>Container Name</td>
+                            <td>Shipping Company</td>
+                            <td>Weight</td>
+                            <td>Status</td>
+                            <td>Date</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>Q14789</h5>
+                                    <p id="view-location">View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>EVERGREEN MARINE CORPORATION</h5>
+                                <p></p>
+                            </td>
+                            <td class="weight">1,000 Kg</td>
+                            <td class="status-in">
+                                <p>Incoming</p>
+                            </td>
+                            <td class="date">
+                                <h5>20/3/2022</h5>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>E15237</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>TS LINES</h5>
+                                <p></p>
+                            </td>
+                            <td class="weight">1,750 Kg</td>
+                            <td class="status">
+                                <p>outgoing</p>
+                            </td>
+                            <td class="date">
+                                <h5>20/3/2022</h5>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>D81542</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>OCEAN NETWORK EXPRESS</h5>
+                                <p></p>
+                            </td>
+                            <td class="weight">1,900 Kg</td>
+                            <td class="status-in">
+                                <p>Incoming</p>
+                            </td>
+                            <td class="date">
+                                <h5>20/3/2022</h5>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>M49452</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>MATSON INC</h5>
+                                <p></p>
+                            </td>
+                            <td class="weight">2,300 Kg</td>
+                            <td class="status-in">
+                                <p>Incoming</p>
+                            </td>
+                            <td class="date">
+                                <h5>20/3/2022</h5>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>M49452</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>MATSON INC</h5>
+                                <p></p>
+                            </td>
+                            <td class="weight">2,300 Kg</td>
+                            <td class="status-in">
+                                <p>Incoming</p>
+                            </td>
+                            <td class="date">
+                                <h5>20/3/2022</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="board2" id="board2">
+                <table class="scrolldown">
+                    <thead>
+                        <tr>
+                            <td>Container Name</td>
+                            <td>Shipping Company</td>
+                            <td>Cargo information</td>
+                            <td>Weight</td>
+                            <td>Temprature</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>Q14789</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>EVERGREEN MARINE CORPORATION</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Electronics</h5>
+                                <p>Computer chips</p>
+                            </td>
+                            <td class="weight">1,000 Kg</td>
+                            <td class="temp">20°C</td>
+                        </tr>
+
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>D81542</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>OCEAN NETWORK EXPRESS</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Food</h5>
+                                <p>Dry Food</p>
+                            </td>
+                            <td class="weight">1,900 Kg</td>
+                            <td class="temp">27°C</td>
+                        </tr>
+
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>M49452</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>MATSON INC</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Wood</h5>
+                            </td>
+                            <td class="weight">2,300 Kg</td>
+                            <td class="temp">10-32°C</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>A19345</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>EVERGREEN</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Home appliances</h5>
+                                <p>Mattress</p>
+                            </td>
+                            <td class="weight">2,100 Kg</td>
+                            <td class="temp">20°C</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="board2-2" id="board2-2">
+                <table class="scrolldown">
+                    <thead>
+                        <tr>
+                            <td>Container Name</td>
+                            <td>Shipping Company</td>
+                            <td>Cargo information</td>
+                            <td>Weight</td>
+                            <td>Temprature</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>P61472</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>cosco</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Electronics</h5>
+                                <p>Motors</p>
+                            </td>
+                            <td class="weight">1,570 Kg</td>
+                            <td class="temp">22°C</td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>M49452</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>EVERGREEN MARINE CORPORATION</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Furniture</h5>
+                                <p>wood</p>
+                            </td>
+                            <td class="weight">2,130 Kg</td>
+                            <td class="temp">10-32°C</td>
+                        </tr>
+
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>T56052</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>OCEAN NETWORK EXPRESS</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Home appliances</h5>
+                                <p>Freezer</p>
+                            </td>
+                            <td class="weight">1,770 Kg</td>
+                            <td class="temp">12°C</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>W48753</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>SINOTRANS</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Food</h5>
+                                <p>Fruits</p>
+                            </td>
+                            <td class="weight">1,355 Kg</td>
+                            <td class="temp">19°C</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="board2-3" id="board2-3">
+                <table class="scrolldown">
+                    <thead>
+                        <tr>
+                            <td>Container Name</td>
+                            <td>Shipping Company</td>
+                            <td>Cargo information</td>
+                            <td>Weight</td>
+                            <td>Temprature</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>C01254</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>OCEAN NETWORK EXPRESS</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Food</h5>
+                                <p>Dry Food</p>
+                            </td>
+                            <td class="weight">1,900 Kg</td>
+                            <td class="temp">27°C</td>
+                        </tr>
+
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>F95871</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>EVERGREEN MARINE CORPORATION</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Electronics</h5>
+                                <p>Proccesors</p>
+                            </td>
+                            <td class="weight">750 Kg</td>
+                            <td class="temp">11°C</td>
+                        </tr>
+
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>T20145</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>Moller-Maersk Group</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Home appliances</h5>
+                                <p>Tables</p>
+                            </td>
+                            <td class="weight">2,050 Kg</td>
+                            <td class="temp">40°C</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>X90936</h5>
+                                    <p >View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>SINOTRANS</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Home appliances</h5>
+                                <p>Vacuum Cleaner</p>
+                            </td>
+                            <td class="weight">2,150 Kg</td>
+                            <td class="temp">17°C</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="board3" id="board3">
+                <table class="scrolldown">
+                    <thead>
+                        <tr>
+                            <td>Container Name</td>
+                            <td>Shipping Company</td>
+                            <td>Cargo information</td>
+                            <td>Weight</td>
+                            <td>Temprature</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>H51247</h5>
+                                    <p >View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>TS LINES</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Food</h5>
+                                <p>wheat</p>
+                            </td>
+                            <td class="weight">1,750 Kg</td>
+                            <td class="temp">23°C</td>
+                        </tr>
+
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>B31524</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>OCEAN NETWORK EXPRESS</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Gases</h5>
+                                <p>Oxygen Stones</p>
+                            </td>
+                            <td class="weight">1,900 Kg</td>
+                            <td class="temp">27°C</td>
+                        </tr>
+
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>N94763</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>MATSON INC</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Wood</h5>
+                                <p>for furniture</p>
+                            </td>
+                            <td class="weight">2,300 Kg</td>
+                            <td class="temp">10-32°C</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>Q61247</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>MATSON INC</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Home appliances</h5>
+                                <p>Mattress</p>
+                            </td>
+                            <td class="weight">2,100 Kg</td>
+                            <td class="temp">20°C</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="board3-2" id="board3-2">
+                <table class="scrolldown">
+                    <thead>
+                        <tr>
+                            <td>Container Name</td>
+                            <td>Shipping Company</td>
+                            <td>Cargo information</td>
+                            <td>Weight</td>
+                            <td>Temprature</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>U47023</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>OCEAN NETWORK EXPRESS</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Agriculture</h5>
+                                <p>Cotton</p>
+                            </td>
+                            <td class="weight">1,200 Kg</td>
+                            <td class="temp">35°C</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>B55087</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>cosco</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Food</h5>
+                                <p>rice</p>
+                            </td>
+                            <td class="weight">1,750 Kg</td>
+                            <td class="temp">23°C</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>L74135</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>EVERGREEN</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Wood</h5>
+                                <p>for furniture</p>
+                            </td>
+                            <td class="weight">2,300 Kg</td>
+                            <td class="temp">26°C</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>J85214</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>MATSON INC</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Home appliances</h5>
+                                <p>Oven</p>
+                            </td>
+                            <td class="weight">2,100 Kg</td>
+                            <td class="temp">8°C</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="board3-3" id="board3-3">
+                <table class="scrolldown">
+                    <thead>
+                        <tr>
+                            <td>Container Name</td>
+                            <td>Shipping Company</td>
+                            <td>Cargo information</td>
+                            <td>Weight</td>
+                            <td>Temprature</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>G74869</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>TS LINES</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Food</h5>
+                                <p>wheat</p>
+                            </td>
+                            <td class="weight">1,750 Kg</td>
+                            <td class="temp">23°C</td>
+                        </tr>
+                      
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>E10045</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>MATSON INC</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Home appliances</h5>
+                                <p>Mattress</p>
+                            </td>
+                            <td class="weight">2,100 Kg</td>
+                            <td class="temp">20°C</td>
+                        </tr>
+
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>R70789</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>OCEAN NETWORK EXPRESS</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Plastic</h5>
+                                <p>Kids Toys</p>
+                            </td>
+                            <td class="weight">900 Kg</td>
+                            <td class="temp">30°C</td>
+                        </tr>
+
+                        <tr>
+                            <td class="cont-name">
+                                <div class="cont-de">
+                                    <h5>W52014</h5>
+                                    <p>View Location</p>
+                                </div>
+                            </td>
+                            <td class="shipping">
+                                <h5>SINOTRANS</h5>
+                                <p></p>
+                            </td>
+                            <td class="cargo-info">
+                                <h5>Wood</h5>
+                                <p>for furniture</p>
+                            </td>
+                            <td class="weight">2,300 Kg</td>
+                            <td class="temp">10-32°C</td>
+                        </tr>
+                    </tbody>
+                        
+                </table>
+            </div>
+            <div class="hide-box" id="hide-box">
+                <div class="date-box" id="date-box">
+                    <h5 id="date-change">19/3/2022</h5>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- profile pop up -->
+    <div class="bg-trans" >
+        <div class="profile-content">
+            <img src="images/menu.png" class="menu-icon" alt="">
+            <!-- <img src="images/setting.png" class="setting-icon" alt=""> -->
+            <img src="images/close.svg" id="close" class="close-icon">
+            <img class="profile-pic" src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" alt="">
+            <h3>Bematists</h3>
+            <p>Harbor Manager</p>
+
+            <button type="button">Profile</button>
+            <div class="profile-bottom">
+                <p>Learn More About Harbor Manager..</p>
+                <img src="images/arrow.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- maps pop up -->
+    <div class="map-bg" >
+        <div class="map-content">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13742.912481685242!2d32.34438450480881!3d30.556984639169325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62abbd84d758d4b1!2zMzDCsDMzJzE4LjEiTiAzMsKwMjAnMTMuOCJF!5e0!3m2!1sen!2seg!4v1644933583484!5m2!1sen!2seg" 
+            width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+            <img  id="close2" class="close-icon2" src="close.svg">
+            <!-- <button type="button">Profile</button> -->
+            <div class="profile-bottom">
+                <p><span>Name: </span> Q14789</p>
+                <p><span>Company: </span> EVERGREEN MARINE CORPORATION</p>
+                <p><span>Harbor From: </span> Guangzhou</p>
+                <p><span>Weight: </span> 1,000</p>
+                <img class="qr-img" src="QR code.png">
+                <!-- <img src="images/arrow.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

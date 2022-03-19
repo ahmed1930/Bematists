@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="trackng.css">
+    <title>Bematists | Tracker</title>
+</head>
+<body>
+    <table class="content">
+        <thead>
+            <tr>
+                <th>NO.</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Cr7</td>
+                <td>EVERGREEN</td>
+                <td>1/20/2022</td>
+                <td><p class="status-incoming">Incoming</p></td>
+            </tr>
+            <tr class="active-row">
+                <td>2</td>
+                <td>mo11</td>
+                <td>MSC</td>
+                <td>1/30/2022</td>
+                <td><p class="status-incoming">Incoming</p></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>reyna5</td>
+                <td>UASC</td>
+                <td>1/20/2022</td>
+                <td><p class="status-outgoing">Outgoing</p></td>
+            </tr>
+            <tr class="active-row">
+                <td>4</td>
+                <td>chrome</td>
+                <td>Fedex</td>
+                <td>1/25/2022</td>
+                <td><p class="status-incoming">Incoming</p></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container">
+        <div id="progress-bar">
+            <div class="step">
+                <p class="step-txt">shipped</p>
+                <div class="bullet completed">1</div>
+            </div>
+            <div class="step">
+                <p class="step-txt">out for delivery</p>
+                <div class="bullet">2</div>
+            </div>
+            <div class="step">
+                <p class="step-txt">arriving</p>
+                <div class="bullet">3</div>
+            </div>
+            <div class="step">
+                <p class="step-txt">received</p>
+                <div class="bullet">4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

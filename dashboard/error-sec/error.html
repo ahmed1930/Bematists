@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="error.css">
+        <title>Bematists | Dashboard</title>
+</head>
+<body>
+    <input type="checkbox" id="nav">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <span>
+                <img class="logo-src" src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" height="65px" width="65px" alt="">
+            </span>
+            <h2>BEMATISTS</h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="../Ships/ship.html">
+                        <i class="fas fa-ship"></i>
+                        <span>Ships</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../dashboard.html">
+                        <i class="fas fa-warehouse"></i>
+                        <span>Storage</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../trucks/trucks.html">
+                        <i class="fas fa-truck-moving"></i>
+                        <span>Trucks<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="error-sec/error.html" class="active">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>Errors</span>
+                        <!-- <span class="error-count">5</span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="../Tasks/tasks.html">
+                        <i class="fas fa-tasks"></i>
+                        <span>Tasks<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../vantage points/points.html">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <span>Vintage Points<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../inbox/inbox.html">
+                        <i class="fas fa-inbox"></i>
+                        <span>inbox<span>
+                    </a>
+                <li>
+                    <a href="../../login/login.html" class="logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout<span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label class="nav-btn" for="nav">
+                    <i class="fas fa-bars"></i>
+                    Dashboard
+                </label>
+            </h2>
+            <div class="user-warpper" id="profile">
+                <img src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" height="40px" width="40px" alt="">
+                <div class="">
+                    <h4>Bematists</h4>
+                    <small>Harbor Manager</small>
+                </div>
+            </div>
+        </header>
+        <!-- messages -->
+        <main>
+            <div class="errors-a">
+                <div class="inner">
+                    <h1>Harbor <span>Errors</span> </h1>
+                    <div class="border"></div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="errors">
+                                <img src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" height="40px" width="40px">
+                                <div class="name">Temperature Sensor <p id="view-location1">View Location</p></div>
+                                <div class="err-box">
+                                    <p>considerable change in temperature of Z81254.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="errors">
+                                <img src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" height="40px" width="40px">
+                                <div class="name">Terminal Truck 2 <p id="view-location2">View Location</p></div>
+                                <div class="err-box">
+                                    <p>power loss.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="errors">
+                                <img src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" height="40px" width="40px">
+                                <div class="name">Load Cell <p id="view-location3">View Location</p></div>
+                                <div class="err-box">
+                                    <p>Change of Weight of Q17458.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- pop up -->
+    <div class="bg-trans" >
+        <div class="profile-content">
+            <img src="images/menu.png" class="menu-icon" alt="">
+            <!-- <img src="images/setting.png" class="setting-icon" alt=""> -->
+            <img src="images/close.svg" id="close" class="close-icon">
+            <img class="profile-pic" src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" alt="">
+            <h3>Bematists</h3>
+            <p>Harbor Manager</p>
+
+            <button type="button">Profile</button>
+            <div class="profile-bottom">
+                <p>Learn More About Harbor Manager..</p>
+                <img src="images/arrow.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- maps pop up -->
+    <div class="map-bg" >
+        <div class="map-content">
+            <p id="maap"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3413.1686414505325!2d29.8736257!3d31.1883371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x823d5ec3826d0854!2zMzHCsDExJzE4LjAiTiAyOcKwNTInMzAuNSJF!5e0!3m2!1sen!2sit!4v1645012249486!5m2!1sen!2sit" 
+            width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+            <img  id="map-close1" class="close-icon2" src="images/close.svg">
+            <!-- <button type="button">Profile</button> -->
+            <div class="map-bottom">
+                <p><span>Name: </span> Temperature Sensor</p>
+                <p><span>Description: </span> considerable change in temperature.</p>
+                <p><span>Type: </span> Temprature Of Q17458 Doesn't Match</p>
+                <!-- <p><span>Harbor From: </span> Guangzhou</p> -->
+                <!-- <img class="qr-img" src="QR code.png"> -->
+                <!-- <img src="images/arrow.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+    <div class="map-bg2" >
+        <div class="map-content">
+            <p id="maap"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3413.1686414505325!2d29.8736257!3d31.1883371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x823d5ec3826d0854!2zMzHCsDExJzE4LjAiTiAyOcKwNTInMzAuNSJF!5e0!3m2!1sen!2sit!4v1645012249486!5m2!1sen!2sit" 
+            width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+            <img  id="map-close2" class="close-icon2" src="images/close.svg">
+            <!-- <button type="button">Profile</button> -->
+            <div class="map-bottom">
+                <p><span>Name: </span> Terminal Truck 2</p>
+                <p><span>Description: </span> Power Loss.</p>
+                <p><span>Type: </span> Truck Power About To End</p>
+                <!-- <p><span>Harbor From: </span> Guangzhou</p> -->
+                <img class="qr-img" src="QR code.png">
+                <!-- <img src="images/arrow.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+    <div class="map-bg3" >
+        <div class="map-content">
+            <p id="maap"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3413.1686414505325!2d29.8736257!3d31.1883371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x823d5ec3826d0854!2zMzHCsDExJzE4LjAiTiAyOcKwNTInMzAuNSJF!5e0!3m2!1sen!2sit!4v1645012249486!5m2!1sen!2sit" 
+            width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+            <img  id="map-close3" class="close-icon2" src="images/close.svg">
+            <!-- <button type="button">Profile</button> -->
+            <div class="map-bottom">
+                <p><span>Name: </span> Load Cell</p>
+                <p><span>Description: </span> considerable change in Weight.</p>
+                <p><span>Type: </span> Weight Of E48561 Doesn't Match</p>
+                <!-- <p><span>Harbor From: </span> Guangzhou</p> -->
+                <img class="qr-img" src="QR code.png">
+                <!-- <img src="images/arrow.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="error.js"></script>
+</body>
+</html>

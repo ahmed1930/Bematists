@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="trucks.css">
+        <title>Bematists | Dashboard</title>
+</head>
+<body>
+    <input type="checkbox" id="nav">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <span>
+                <img class="logo-src" src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" height="65px" width="65px" alt="">
+            </span>
+            <h2>BEMATISTS</h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="../Ships/ship.html">
+                        <i class="fas fa-ship"></i>
+                        <span>Ships</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../dashboard.html">
+                        <i class="fas fa-warehouse"></i>
+                        <span>Storage</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="trucks.html" class="active">
+                        <i class="fas fa-truck-moving"></i>
+                        <span>Trucks<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../error-sec/error.html">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>Errors</span>
+                        <span class="error-count">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Tasks/tasks.html">
+                        <i class="fas fa-tasks"></i>
+                        <span>Tasks<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../vantage points/points.html">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <span>Vintage Points<span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../inbox/inbox.html">
+                        <i class="fas fa-inbox"></i>
+                        <span>inbox<span>
+                    </a>
+                <li>
+                    <a href="../../login/login.html" class="logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout<span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label class="nav-btn" for="nav">
+                    <i class="fas fa-bars"></i>
+                    Dashboard
+                </label>
+            </h2>
+            <div class="user-warpper" id="profile">
+                <img src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" height="40px" width="40px" alt="">
+                <div class="">
+                    <h4>Bematists</h4>
+                    <small>Harbor Manager</small>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="cards">
+                <div class="single-card">
+                    <div class="text">
+                        <h1>50</h1>
+                        <span>Trucks In Work</span>
+                    </div>
+                    <div class="icon"> 
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                </div>
+                <div class="single-card">
+                    <div class="text">
+                        <h1>200</h1>
+                        <span>Total Trucks</span>
+                    </div>
+                    <div class="icon"> 
+                        <i class="fas fa-truck-moving"></i>
+                    </div>
+                </div>
+                <div class="double-card">
+                    <div class="text">
+                        <h1>150</h1>
+                        <span>Available Trucks</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                <!-- <div class="single-card">
+                    <div class="text">
+                    </div>
+                    <div class="icon"> 
+                    </div>
+                </div> -->
+            </div>
+            <div class="table-txt">
+                <h1>Unload</h1>
+                <div class="board">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Root</td>
+                                <td>Status</td>
+                                <td>Power</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="people">
+                                    <!-- <img class="bematists-logo" src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" alt="logo"> -->
+                                    <div class="people-de">
+                                        <h5>Terminal truck 1</h5>
+                                        <p>Transfer containers</p>
+                                    </div>
+                                </td>
+
+                                <td class="people-des">
+                                    <h5>A-B</h5>
+                                    <p>Track</p>
+                                </td>
+
+                                <td class="active"><p class="text1">Active</p></td>
+                                <td class="edit"><div class="container">
+                                    <label class="switch">
+                                        <input id="power1" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div></td>
+                            </tr>
+                            <tr>
+                                <td class="people">
+                                    <div class="people-de">
+                                        <h5>Terminal truck 2</h5>
+                                        <p>Transfer containers</p>
+                                    </div>
+                                </td>
+
+                                <td class="people-des">
+                                    <h5>B-C</h5>
+                                    <p>Track</p>
+                                </td>
+
+                                <td class="active"><p class="text2">Active</p></td>
+                                <!-- <td class="edit"><a href="#">on</a></td> -->
+                                <td class="edit"><div class="container">
+                                    <label class="switch">
+                                        <input id="power2" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div></td>
+                            </tr><tr>
+                                <td class="people">
+                                    <div class="people-de">
+                                        <h5>Terminal truck 3</h5>
+                                        <p>Transfer containers</p>
+                                    </div>
+                                </td>
+
+                                <td class="people-des">
+                                    <h5>A-B</h5>
+                                    <p>Track</p>
+                                </td>
+
+                                <td class="active"><p class="text3">Active</p></td>
+                                <td class="edit"><div class="container">
+                                    <label class="switch">
+                                        <input id="power3" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div></td>
+                            </tr><tr>
+                                <td class="people">
+                                    <div class="people-de">
+                                        <h5>Terminal truck 4</h5>
+                                        <p>Transfer containers</p>
+                                    </div>
+                                </td>
+
+                                <td class="people-des">
+                                    <h5>B-C</h5>
+                                    <p>Track</p>
+                                </td>
+
+                                <td class="active"><p class="text4">Active</p></td>
+                                <td class="edit"><div class="container">
+                                    <label class="switch">
+                                        <input id="power4" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div></td>
+                            </tr><tr>
+                                <td class="people">
+                                    <div class="people-de">
+                                        <h5>Terminal truck 5</h5>
+                                        <p>Transfer containers</p>
+                                    </div>
+                                </td>
+
+                                <td class="people-des">
+                                    <h5>C-D</h5>
+                                    <p>Track</p>
+                                </td>
+
+                                <td class="active"><p class="text5">Active</p></td>
+                                <td class="edit"><div class="container">
+                                    <label class="switch">
+                                        <input id="power5" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div></td>
+                            </tr><tr>
+                                <td class="people">
+                                    <div class="people-de">
+                                        <h5>Terminal truck 6</h5>
+                                        <p>Transfer containers</p>
+                                    </div>
+                                </td>
+
+                                <td class="people-des">
+                                    <h5>A-B</h5>
+                                    <p>Track</p>
+                                </td>
+
+                                <td class="active"><p class="text6">Active</p></td>
+                                <td class="edit"><div class="container">
+                                    <label class="switch">
+                                        <input id="power6" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="table-txt">
+                <h1>Load</h1>
+                <div class="board">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Root</td>
+                                <td>Status</td>
+                                <td>Power</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="people">
+                                    <!-- <img class="bematists-logo" src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" alt="logo"> -->
+                                    <div class="people-de">
+                                        <h5>Terminal truck 7</h5>
+                                        <p>Transfer containers</p>
+                                    </div>
+                                </td>
+
+                                <td class="people-des">
+                                    <h5>A-B</h5>
+                                    <p>Track</p>
+                                </td>
+
+                                <td class="active"><p class="text7">Active</p></td>
+                                <td class="edit"><div class="container">
+                                    <label class="switch">
+                                        <input id="power7" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div></td>
+                            </tr>
+                            <tr>
+                                <td class="people">
+                                    <div class="people-de">
+                                        <h5>Terminal truck 8</h5>
+                                        <p>Transfer containers</p>
+                                    </div>
+                                </td>
+
+                                <td class="people-des">
+                                    <h5>B-C</h5>
+                                    <p>Track</p>
+                                </td>
+
+                                <td class="active"><p class="text8">Active</p></td>
+                                <!-- <td class="edit"><a href="#">on</a></td> -->
+                                <td class="edit"><div class="container">
+                                    <label class="switch">
+                                        <input id="power8" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div></td>
+                            </tr><tr>
+                                <td class="people">
+                                    <div class="people-de">
+                                        <h5>Terminal truck 9</h5>
+                                        <p>Transfer containers</p>
+                                    </div>
+                                </td>
+
+                                <td class="people-des">
+                                    <h5>A-B</h5>
+                                    <p>Track</p>
+                                </td>
+
+                                <td class="active"><p class="text9">Active</p></td>
+                                <td class="edit"><div class="container">
+                                    <label class="switch">
+                                        <input id="power9" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div></td>
+                            </tr><tr>
+                                <td class="people">
+                                    <div class="people-de">
+                                        <h5>Terminal truck 10</h5>
+                                        <p>Transfer containers</p>
+                                    </div>
+                                </td>
+
+                                <td class="people-des">
+                                    <h5>B-C</h5>
+                                    <p>Track</p>
+                                </td>
+
+                                <td class="active"><p class="text11">Active</p></td>
+                                <td class="edit"><div class="container">
+                                    <label class="switch">
+                                        <input id="power10" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div></td>
+                            </tr><tr>
+                                <td class="people">
+                                    <div class="people-de">
+                                        <h5>Terminal truck 11</h5>
+                                        <p>Transfer containers</p>
+                                    </div>
+                                </td>
+
+                                <td class="people-des">
+                                    <h5>C-D</h5>
+                                    <p>Track</p>
+                                </td>
+
+                                <td class="active"><p class="text10">Active</p></td>
+                                <td class="edit"><div class="container">
+                                    <label class="switch">
+                                        <input id="power11" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div></td>
+                            </tr><tr>
+                                <td class="people">
+                                    <div class="people-de">
+                                        <h5>Terminal truck 12</h5>
+                                        <p>Transfer containers</p>
+                                    </div>
+                                </td>
+
+                                <td class="people-des">
+                                    <h5>A-B</h5>
+                                    <p>Track</p>
+                                </td>
+
+                                <td class="active"><p class="text12">Active</p></td>
+                                <td class="edit"><div class="container">
+                                    <label class="switch">
+                                        <input id="power12" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- pop up -->
+    <div class="bg-trans" >
+        <div class="profile-content">
+            <img src="images/menu.png" class="menu-icon" alt="">
+            <!-- <img src="images/setting.png" class="setting-icon" alt=""> -->
+            <img src="images/close.svg" id="close" class="close-icon">
+            <img class="profile-pic" src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg" alt="">
+            <h3>Bematists</h3>
+            <p>Harbor Manager</p>
+            <button type="button">Profile</button>
+            <div class="profile-bottom">
+                <p>Learn More About Harbor Manager..</p>
+                <img src="images/arrow.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="trucks.js"></script>
+</body>
+</html>

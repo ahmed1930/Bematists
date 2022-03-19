@@ -1,0 +1,46 @@
+<div class="err-container">
+                <div id="slider" class="owl-carousel">
+                    <div class="content-area">
+                        <div class="content">
+                            <div class="image-area"><img src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg"></div>
+                            <h2>DHT11</h2>
+                            <P>considerable change in temperature</P>
+                            <p class="socials">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-behance"></i>
+                                <i class="fa fa-youtube"></i>
+                                <i class="fa fa-dribble"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-area">
+                        <div class="content">
+                            <div class="image-area"><img src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg"></div>
+                            <h2>Terminal Truck 2</h2>
+                            <P>power loss.</P>
+                            <p class="socials">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-behance"></i>
+                                <i class="fa fa-youtube"></i>
+                                <i class="fa fa-dribble"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-area">
+                        <div class="content">
+                            <div class="image-area"><img src="https://media.discordapp.net/attachments/796740230157041694/926745708604825610/received_243516781190425.jpeg"></div>
+                            <h2>Load Cell</h2>
+                            <P>Weight of Q17458</P>
+                            <p class="socials">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-behance"></i>
+                                <i class="fa fa-youtube"></i>
+                                <i class="fa fa-dribble"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="info.css">
+    <title>Bematists | Tracker</title>
+</head>
+<body class="light">
+    <div class="container">
+        <h2>Shipping Company</h2>
+
+        <div class="select-box">
+            <div class="options-container"> <!-- active -->
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="msa">
+                    <label for="msc">MEDITERRANEAN SHIPPING COMPANY S.A.</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="cma cgm">
+                    <label for="msc">MA CMG</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="cosco">
+                    <label for="cosco">cosco</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="Moller-Maersk Group">
+                    <label for="Moller-Maersk Group">Moller-Maersk Group</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id=" one">
+                    <label for="one">OCEAN NETWORK EXPRESS</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="EVERGREEN MARINE CORPORATION">
+                    <label for="evergreen">EVERGREEN MARINE CORPORATION</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="WAN HAI LINES">
+                    <label for="WAN HAI LINES">WAN HAI LINES</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="TS LINES">
+                    <label for="TS LINES">TS LINES</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="SINOTRANS">
+                    <label for="SINOTRANS">SINOTRANS</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="MATSON INC">
+                    <label for="MATSON INC">MATSON INC</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="SWIRE SHIPPING">
+                    <label for="SWIRE SHIPPING">SWIRE SHIPPING</label>
+                </div>
+            </div>
+            <div class="selected">select one</div>
+            <div class="search-box"><input type="text" placeholder="Start Typing..."></div>
+        </div>
+    </div>
+    <div class="cargo-info container">
+        <h2>Cargo Information</h2>
+
+        <div class="select-box">
+            <div class="options-container"> <!-- active -->
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="medicin">
+                    <label for="msc">Medcin</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="electronics">
+                    <label for="msc">Electronics</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="food">
+                    <label for="msc">Food</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="gases">
+                    <label for="msc">Gases</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="explosives">
+                    <label for="msc">Explosives</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="radio-active">
+                    <label for="msc">Radio Atives</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" name="Category" id="electronics">
+                    <label for="msc">Electronics</label>
+                </div>
+            </div>
+            <div class="selected">select one</div>
+            <div class="search-box"><input type="text" placeholder="Start Typing..."></div>
+        </div>
+    </div>
+    <div class="qr-search">
+        <div class="qr container">
+            <div class="warpper">
+                <div class="search_wrap search_wrap_6">
+                    <div class="search_box">
+                        <input id="input-area" type="text" class="input" placeholder="search...">
+                        <i id="err-icn" class="err-icon fas fa-exclamation-circle"></i>
+                        <div id="search-btn" class="btn">
+                            <p>Search</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- date -->
+    <div class="calendar-container">
+        <!-- <h2>Date</h2> -->
+        <div class="calendar">
+            <div class="calendar-header">
+                <span class="month-picker" id="month-picker">
+                    February
+                </span>
+                <div class="year-picker">
+                    <span class="year-change" id="prev-year">
+                        <pre><</pre>
+                    </span>
+                    <span id="year">2022</span>
+                    <span class="year-change" id="next-year">
+                        <pre>></pre>
+                    </span>
+                </div>
+            </div>
+
+            <div class="calendar-body">
+                <div class="calendar-week-day">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="calendar-days">
+                    <div>
+                        1
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                </div>
+            </div>
+
+            <div class="month-list"></div>
+
+        </div>
+    </div>
+    
+
+    <script src="info.js"></script>
+</body>
+</html>

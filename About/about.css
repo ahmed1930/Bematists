@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 100px 125px;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #6d0911;
+    position: relative;
+}
+.bematists-logo {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 55%;
+    top: 10%;
+}
+.container {
+    margin-top: -230px;
+}
+.main h2{
+    z-index: 3;
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+}
+.main h3 span{
+    z-index: 3;
+    display: inline-block;
+    margin-top: 10px;
+    color: #e1ba74;
+    font-size: 2em;
+    font-weight: 600;
+    margin-left: -20px;
+}
+.main h3{
+    padding-left: 30px;
+    z-index: 3;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
